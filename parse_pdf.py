@@ -7,7 +7,6 @@ def read_pdf(file_path):
         num_pages = len(pdf_reader.pages)
 
         content = ""
-        # grades = []
         for page_num in range(num_pages):
             page = pdf_reader.pages[page_num]
             text = page.extract_text()

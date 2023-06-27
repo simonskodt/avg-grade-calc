@@ -25,10 +25,7 @@ def parse_arguments():
 
 def construct_file_path(args):
     current_dir = os.getcwd()
-    # print(f"CURRENT DIR: {current_dir}")
-    # print(args)
     file_path = os.path.join(current_dir, args)
-    # print(file_path)
     if not os.path.isfile(file_path):
         sys.stderr.write('Error: file does not exist\n')
         exit(1)
